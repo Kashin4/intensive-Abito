@@ -1,0 +1,83 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #0a143a; /* цвет текста*/
+}
+
+.header {
+  max-width: 1446px; /*максимальная ширина */
+  margin: auto; /* автоматическое выравнивание по середине */
+  padding-top: 30px;
+}
+
+.navbar {
+  display: flex; /*делаем гибкий блок */
+  align-items: center; /* автоматическое выравнивание по середине */
+  justify-content: space-between; /* разброс элементов по краю */
+  margin-bottom: 24px;
+}
+
+.navbar-menu {
+  margin-right: auto; /* автоматический отступ справа */
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 22px; /* внутренний отступ слева */
+  padding-right: 22px; /* внутренний отступ справа */
+  display: flex;
+}
+
+/* применяется ко всем пунктам меню, кроме последнего элемента */
+.menu-item:not(:last-child) {
+  margin-right: 14px; /* отступ справа */
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit; /* возьми текст как у родителя (body) */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px; /* сверху и снизу 10px по краям 15px */
+  cursor: pointer;
+}
+.button-link {
+  color: inherit;
+}
+
+.button-primary {
+  background: #256eeb;
+  border-radius: 5px;
+  color: #fff;
+}
+.search-panel {
+  height: 50px;
+  background: #256eeb;
+  border-radius: 5px;
+  display: flex;
+  padding: 3px;
+}
+.search-input {
+  flex-grow: 1; /* растягивается на все свободное пространство*/
+  background: #ffffff;
+  border-radius: 5px;
+  border: none; 
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.search-button{
+    background: #256EEB;
+  border: none; 
+color: #fff;
+padding-left: 20px;
+padding-right: 17px;
+display: flex;
+align-items: center;
+}
+
+.search-button-text{
+    margin-left: 5px;
+}
